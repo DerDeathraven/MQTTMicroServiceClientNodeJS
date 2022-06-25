@@ -1,0 +1,15 @@
+{
+  "name": "smarthomenotifications",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "node-notifier": "^10.0.1"
+  }
+}
