@@ -39,7 +39,7 @@ class ServiceManager {
     this.services.forEach((e) => {
       if (e.name == service) {
         e.child.kill();
-        console.log("Stopping service" + service);
+        console.log("Stopping service " + service);
       }
     });
   }
@@ -48,6 +48,7 @@ class ServiceManager {
 class Service {
   constructor(inpObj) {
     this.name = inpObj.name;
+    this.port = inpObj.port;
     this.started = false;
   }
 }
