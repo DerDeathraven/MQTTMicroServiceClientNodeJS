@@ -2,6 +2,10 @@ const os = require("os");
 const fs = require("fs");
 const path = require("path");
 
+/**
+ *
+ * @returns {string} ip of this client
+ */
 function getIp() {
   var nets = os.networkInterfaces();
   var results = {};
@@ -22,6 +26,11 @@ function getIp() {
 
   return results["en0"][0];
 }
+
+/**
+ * Returns Serices located in /services
+ * @returns {Array<object>}
+ */
 function getServices() {
   var retArr = [];
 
@@ -38,6 +47,10 @@ function getServices() {
   return retArr;
 }
 
+/**
+ * returns all OwnService wich are services that run on the client and only affect the client
+ * @returns {Array}
+ */
 function getOwnServices() {
   var retArr = [];
 
